@@ -7,6 +7,8 @@
    telefone:        como aparece na tela
    telefoneLink:    formato para o link "tel:" (ex.: +5511987654321)
    email:           endereço de e-mail
+   instagram:       URL completa do perfil
+   instagramHandle: @ como aparece na tela
    ============================================================ */
 
 window.SITE_CONFIG = {
@@ -16,4 +18,6 @@ window.SITE_CONFIG = {
   telefone: "(11) 98765-4321",
   telefoneLink: "+5511987654321",
   email: "contato@vetcardio.com.br",
+  instagram: "https://www.instagram.com/lealmedvet",
+  instagramHandle: "@lealmedvet",
 };

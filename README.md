@@ -1,6 +1,6 @@
-# Dra. Eliz Leal — Cardiologia Veterinária
+# Leal Medvet — Dra. Eliz Leal · Cardiologia Veterinária
 
-Site institucional (one-page) da Dra. Eliz Leal, desenvolvido em HTML, CSS e JavaScript puros — sem build, sem dependências.
+Site institucional (one-page) da Leal Medvet — Dra. Eliz Leal, desenvolvido em HTML, CSS e JavaScript puros — sem build, sem dependências.
 
 ## Como visualizar
 
@@ -28,6 +28,8 @@ window.SITE_CONFIG = {
   telefone: "(11) 98765-4321",
   telefoneLink: "+5511987654321",
   email: "contato@vetcardio.com.br",
+  instagram: "https://www.instagram.com/lealmedvet",
+  instagramHandle: "@lealmedvet",
 };
 ```
 
@@ -55,5 +57,4 @@ O site é estático e pode ser hospedado gratuitamente:
 ## Personalizações futuras já preparadas
 
 - **Endereço/clínica**: adicionar um novo item na lista `contact-list` em `index.html` (seção Contato) e no rodapé.
-- **Instagram**: adicionar link no rodapé e/ou na seção Contato.
 - **Cores**: todas centralizadas em variáveis CSS no topo de `css/styles.css` (`:root`).

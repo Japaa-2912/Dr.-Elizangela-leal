@@ -383,11 +383,16 @@ svg {
 }
 
 .brand-text small {
-  font-size: 0.66rem;
-  letter-spacing: 0.22em;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--sage-600);
   font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand-sub {
+  color: var(--sage-500);
 }
 
 .site-nav ul {
@@ -1341,6 +1346,16 @@ body.menu-open .mobile-menu {
 /* ------------------------------------------------------------
    Responsivo
    ------------------------------------------------------------ */
+@media (max-width: 1200px) {
+  .brand-sub {
+    display: none;
+  }
+
+  .site-nav ul {
+    gap: 22px;
+  }
+}
+
 @media (max-width: 1080px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1370,6 +1385,10 @@ body.menu-open .mobile-menu {
   .site-nav,
   .header-actions .btn {
     display: none;
+  }
+
+  .brand-sub {
+    display: inline;
   }
 
   .nav-toggle {
@@ -1438,8 +1457,8 @@ body.menu-open .mobile-menu {
   }
 
   .brand-text small {
-    font-size: 0.6rem;
-    letter-spacing: 0.18em;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
   }
 
   html {
@@ -1509,6 +1528,12 @@ body.menu-open .mobile-menu {
     white-space: normal;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-sub {
+    display: none;
   }
 }
 

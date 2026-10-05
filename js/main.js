@@ -28,6 +28,16 @@
     el.setAttribute("href", "mailto:" + (cfg.email || ""));
   });
 
+  document.querySelectorAll("[data-instagram-text]").forEach(function (el) {
+    el.textContent = cfg.instagramHandle || "";
+  });
+  document.querySelectorAll("[data-instagram-link]").forEach(function (el) {
+    if (!cfg.instagram) return;
+    el.setAttribute("href", cfg.instagram);
+    el.setAttribute("target", "_blank");
+    el.setAttribute("rel", "noopener noreferrer");
+  });
+
   /* ---------- Ano no rodapé ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
