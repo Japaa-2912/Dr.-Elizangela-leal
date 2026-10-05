@@ -15,9 +15,9 @@ window.SITE_CONFIG = {
   whatsapp: "5511987654321",
   whatsappMensagem:
     "Olá, Dra. Eliz! Gostaria de agendar uma consulta cardiológica para o meu pet.",
-  telefone: "(11) 98765-4321",
-  telefoneLink: "+5511987654321",
-  email: "contato@vetcardio.com.br",
+  telefone: "(11) 99344-1836",
+  telefoneLink: "+55 11 99344-1836",
+  email: "Lealmedvet@gmail.com",
   instagram: "https://www.instagram.com/lealmedvet",
   instagramHandle: "@lealmedvet",
 };
