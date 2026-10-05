@@ -12,7 +12,7 @@
    ============================================================ */
 
 window.SITE_CONFIG = {
-  whatsapp: "5511987654321",
+  whatsapp: "5511993441836",
   whatsappMensagem:
     "Olá, Dra. Eliz! Gostaria de agendar uma consulta cardiológica para o meu pet.",
   telefone: "(11) 99344-1836",
