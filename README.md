@@ -61,13 +61,14 @@ O site é estático e pode ser hospedado gratuitamente:
 
 ## Logo animada
 
-A logo Leal Medvet (cachorro + gato + ECG + coração + nome) é um SVG inline no `index.html`,
-com a animação de "traço se desenhando" definida em `css/styles.css` (`@keyframes logo-draw`).
+A logo Leal Medvet (cachorro + gato + ECG + coração + nome) foi reconstruída a partir da
+vetorização da logo original (`picsvg_modified.svg`): as linhas foram extraídas, limpas e
+refinadas (esqueletização), com o coração + ECG desenhados no traço final. É um SVG inline
+no `index.html`, animado com "traço se desenhando" (`@keyframes logo-draw` em `css/styles.css`).
 O tempo de entrada de cada traço é controlado pelo atributo `style="--d:Xs"` de cada path.
 
 - **Header**: versão compacta (coração + ECG), `class="brand-mark"`
 - **Rodapé**: logo completa com o nome, `class="footer-logo"`
 - **Favicon**: coração + ECG (`assets/favicon.svg`)
-
-Crédito: as silhuetas do cachorro e do gato são baseadas nos ícones
-[Pinhead](https://github.com/waysidemapping/pinhead) (licença CC0 — domínio público).
+- **Arquivo avulso**: `assets/img/logo-lealmedvet.svg` (versão completa, para usar em
+  redes sociais, documentos, etc.)
