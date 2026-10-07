@@ -386,7 +386,7 @@ svg {
 .brand-mark {
   width: auto;
   height: 42px;
-  aspect-ratio: 252 / 238;
+  aspect-ratio: 131 / 136;
   color: var(--sage-700);
   --logo-heart: #c13b47;
   --logo-halo: var(--paper);
