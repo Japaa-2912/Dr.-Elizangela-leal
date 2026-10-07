@@ -1,13 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#72846C"/>
-  <g transform="translate(8 8) scale(2)">
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="none" stroke="#F3F6F0" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
-    <g fill="#F3F6F0">
-      <ellipse cx="9.5" cy="10" rx="1.05" ry="1.3" transform="rotate(-18 9.5 10)"/>
-      <ellipse cx="11.4" cy="9.1" rx="1.05" ry="1.3" transform="rotate(-6 11.4 9.1)"/>
-      <ellipse cx="13.4" cy="9.1" rx="1.05" ry="1.3" transform="rotate(6 13.4 9.1)"/>
-      <ellipse cx="15.3" cy="10" rx="1.05" ry="1.3" transform="rotate(18 15.3 10)"/>
-      <path d="M12.4 11.6c-1.4 0-2.6 1-2.6 2.3 0 1 .8 1.7 1.7 1.7.4 0 .7-.1.9-.3.2.2.5.3.9.3.9 0 1.7-.7 1.7-1.7 0-1.3-1.2-2.3-2.6-2.3z"/>
-    </g>
+  <g transform="translate(-152.1 -16.7) scale(0.209)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M770 240 h20 l16 -30 18 52 16 -38 12 16 h60 l16 -30 18 52 16 -38 12 16 h38" stroke="#FBFAF7" stroke-width="10"/>
+    <path d="M990 154 C975 129 949 116 924 119 C899 121 883 136 876 153 C869 136 853 121 829 119 C804 116 786 130 780 151 C773 175 783 196 800 216 C820 240 846 263 876 290 L897 309 C901 313 906 317 911 321 C916 317 921 313 925 309 L947 288 C970 266 989 246 999 225 C1008 205 1011 181 1002 162 C999 159 995 156 990 154" stroke="#E2838C" stroke-width="10"/>
   </g>
 </svg>

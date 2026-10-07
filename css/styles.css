@@ -323,6 +323,32 @@ svg {
   }
 }
 
+@keyframes logo-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Logo Leal Medvet animada */
+.logo-svg .draw {
+  stroke-dasharray: var(--len, 900);
+  stroke-dashoffset: var(--len, 900);
+}
+
+.logo-svg.logo-visible .draw {
+  animation: logo-draw 1.1s ease-out forwards;
+  animation-delay: var(--d, 0s);
+}
+
+.logo-svg .logo-text {
+  opacity: 0;
+  transition: opacity 0.8s ease 2.6s;
+}
+
+.logo-svg.logo-visible .logo-text {
+  opacity: 1;
+}
+
 /* ------------------------------------------------------------
    Header
    ------------------------------------------------------------ */
@@ -358,14 +384,13 @@ svg {
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
-  color: var(--sage-600);
+  width: auto;
+  height: 42px;
+  aspect-ratio: 252 / 238;
+  color: var(--sage-700);
+  --logo-heart: #c13b47;
+  --logo-halo: var(--paper);
   flex: none;
-}
-
-.brand-mark .paw {
-  fill: var(--sage-700);
 }
 
 .brand-text {
@@ -1273,25 +1298,26 @@ body.menu-open .mobile-menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.footer-brand .brand-mark {
-  color: var(--sage-200);
+.footer-logo {
+  width: min(340px, 100%);
+  height: auto;
+  color: var(--sage-100);
+  --logo-heart: #e2838c;
+  --logo-halo: var(--sage-700);
 }
 
-.footer-brand .brand-mark .paw {
-  fill: var(--sage-100);
-}
-
-.footer-brand .brand-text strong {
-  color: #fff;
-}
-
-.footer-brand .brand-text small {
+.footer-owner {
+  margin: 22px 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--sage-200);
 }
 
 .footer-brand p {
   max-width: 34ch;
-  margin-top: 18px;
+  margin-top: 14px;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1448,8 +1474,8 @@ body.menu-open .mobile-menu {
   }
 
   .brand-mark {
-    width: 38px;
     height: 38px;
+    width: auto;
   }
 
   .brand-text strong {
@@ -1572,6 +1598,16 @@ body.menu-open .mobile-menu {
 
   .ecg-run {
     display: none;
+  }
+
+  .logo-svg .draw {
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+  }
+
+  .logo-svg .logo-text {
+    opacity: 1;
+    transition: none;
   }
 
   .btn,

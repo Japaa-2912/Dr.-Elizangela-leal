@@ -121,6 +121,40 @@
     }
   });
 
+  /* ---------- Logos Leal Medvet (traço se desenhando) ---------- */
+  document.querySelectorAll(".logo-svg").forEach(function (svg) {
+    svg.querySelectorAll(".draw").forEach(function (path) {
+      try {
+        path.style.setProperty("--len", Math.ceil(path.getTotalLength()) + 2);
+      } catch (error) {
+        path.style.setProperty("--len", 900);
+      }
+    });
+  });
+
+  var logoEls = document.querySelectorAll("[data-logo]");
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    logoEls.forEach(function (el) {
+      el.classList.add("logo-visible");
+    });
+  } else {
+    var logoObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("logo-visible");
+            logoObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    logoEls.forEach(function (el) {
+      logoObserver.observe(el);
+    });
+  }
+
   /* ---------- Fotos reais: use assets/img/hero.jpg e assets/img/sobre.jpg ----------
      Enquanto o arquivo não existir, o placeholder elegante permanece no ar. */
   document.querySelectorAll("img[data-real]").forEach(function (img) {

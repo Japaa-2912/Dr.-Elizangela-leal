@@ -58,3 +58,16 @@ O site é estático e pode ser hospedado gratuitamente:
 
 - **Endereço/clínica**: adicionar um novo item na lista `contact-list` em `index.html` (seção Contato) e no rodapé.
 - **Cores**: todas centralizadas em variáveis CSS no topo de `css/styles.css` (`:root`).
+
+## Logo animada
+
+A logo Leal Medvet (cachorro + gato + ECG + coração + nome) é um SVG inline no `index.html`,
+com a animação de "traço se desenhando" definida em `css/styles.css` (`@keyframes logo-draw`).
+O tempo de entrada de cada traço é controlado pelo atributo `style="--d:Xs"` de cada path.
+
+- **Header**: versão compacta (coração + ECG), `class="brand-mark"`
+- **Rodapé**: logo completa com o nome, `class="footer-logo"`
+- **Favicon**: coração + ECG (`assets/favicon.svg`)
+
+Crédito: as silhuetas do cachorro e do gato são baseadas nos ícones
+[Pinhead](https://github.com/waysidemapping/pinhead) (licença CC0 — domínio público).
