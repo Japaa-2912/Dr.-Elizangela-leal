@@ -1,6 +1,24 @@
 (function () {
   "use strict";
 
+  /* ---------- Iniciar sempre no topo (evita rolagem automática no mobile) ---------- */
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  function goTop() {
+    if (window.location.hash) return;
+    var html = document.documentElement;
+    var prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    html.style.scrollBehavior = prev || "";
+  }
+
+  goTop();
+  window.addEventListener("load", goTop);
+  window.addEventListener("pageshow", goTop);
+
   var cfg = window.SITE_CONFIG || {};
 
   /* ---------- Contatos (config.js) ---------- */
